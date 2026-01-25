@@ -1,0 +1,22 @@
+{
+  "name": "lhi-systems-website",
+  "version": "0.1.0",
+  "description": "Website for lhisystems.com - LHI Systems professional services",
+  "formFactor": "lhi_git_projects",
+  "type": "website",
+  "status": "placeholder",
+  "domain": "lhisystems.com",
+  "hosting": {
+    "provider": "digitalocean",
+    "dropletId": "535337615",
+    "ip": "134.199.198.58"
+  },
+  "nginx": {
+    "configPath": "/etc/nginx/sites-available/lhisystems.com",
+    "webRoot": "/var/www/lhisystems"
+  },
+  "ssl": {
+    "provider": "letsencrypt",
+    "certPath": "/etc/letsencrypt/live/lhisystems.com/"
+  }
+}

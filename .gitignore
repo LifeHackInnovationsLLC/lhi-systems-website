@@ -1,0 +1,25 @@
+# Server files
+.server.pid
+.server.log
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Build (future)
+dist/
+build/
+.cache/

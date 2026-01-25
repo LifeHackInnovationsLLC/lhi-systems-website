@@ -1,0 +1,18 @@
+{
+  "name": "lhi-systems-website",
+  "version": "0.1.0",
+  "description": "Website for lhisystems.com",
+  "scripts": {
+    "start": "./launch.sh start",
+    "stop": "./launch.sh stop",
+    "status": "./launch.sh status",
+    "launch": "./launch.sh start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LifeHackInnovationsLLC/lhi-systems-website.git"
+  },
+  "author": "Life Hack Innovations LLC",
+  "license": "UNLICENSED",
+  "private": true
+}
