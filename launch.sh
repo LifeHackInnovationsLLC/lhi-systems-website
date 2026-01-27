@@ -7,7 +7,7 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PID_FILE="$SCRIPT_DIR/.server.pid"
 LOG_FILE="$SCRIPT_DIR/.server.log"
-PORT=8082
+PORT=7082  # LHI reserved port range (7000-7999)
 
 # Colors
 RED='\033[0;31m'
