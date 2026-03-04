@@ -7,16 +7,7 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PID_FILE="$SCRIPT_DIR/.server.pid"
 LOG_FILE="$SCRIPT_DIR/.server.log"
-
-# Ensure LHI_SCRIPTS_ROOT is set
-if [ -z "$LHI_SCRIPTS_ROOT" ]; then
-    echo "Error: LHI_SCRIPTS_ROOT not set"
-    exit 1
-fi
-
-# Source port registry for dynamic port lookup
-source "${LHI_SCRIPTS_ROOT}/lhi_modules/lhi_git_projects/LifeHackInnovationsLLC/lhi_node_modules/lhi_bash_utilities/lib/port_registry.sh"
-PORT=$(get_port_by_tool "lhisystems-website")
+PORT=7082  # LHI reserved port range (7000-7999)
 
 # Colors
 RED='\033[0;31m'
